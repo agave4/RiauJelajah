@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/riau_green">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSplashLogo"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="105dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:strokeColor="@color/riau_gold"
+        app:strokeWidth="4dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:scaleX="1.15"
+            android:scaleY="1.15"
+            android:translationX="-5dp"
+            android:translationY="8dp"
+            android:src="@drawable/logo_riaujelajah" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:indeterminateTint="@color/riau_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardSplashLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
